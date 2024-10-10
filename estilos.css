@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    --color: rgba(114, 114, 114, 0.3);
+    background-color: #191a1a;
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+    linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+    background-size: 55px 55px;
+}
+h1{
+    color: white;
+    font-size: 3rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 3rem;
+    text-align: center;
+}
+.searchBox {
+    display: flex;
+    max-width: 40rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    background: #2f3640;
+    border-radius: 50px;
+    position: relative;
+    margin: auto;
+    margin-top: 5rem;
+  }  
+  .searchButton {
+    color: white;
+    position: absolute;
+    right: 8px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--gradient-2, linear-gradient(90deg, #2AF598 0%, #009EFD 100%));
+    border: 0;
+    display: inline-block;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  }
+  /*hover effect*/
+  button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px;
+    transform: translateY(-3px);
+  }
+  /*button pressing effect*/
+  button:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+  
+  .searchInput {
+    border: none;
+    background: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    padding: 24px 46px 24px 26px;
+    width: 100vw;
+  }
+  
+.card{
+    margin: auto;
+    margin-top: 5rem;
+    width: 350px;
+    height: 235px;
+    position: relative;
+    padding: 25px;
+    background: radial-gradient(178.94% 106.41% at 26.42% 106.41%, #5bfaff86 0%, rgba(255, 255, 255, 0) 99.88%) , #75a1f1a1;
+    box-shadow: 0px 155px 62px rgba(0, 0, 0, 0.01), 0px 87px 52px rgba(0, 0, 0, 0.05), 0px 39px 39px rgba(0, 0, 0, 0.09), 0px 10px 21px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 23px;
+    transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+    cursor: pointer;
+  }
+.visible {
+  display: none;
+}
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  
+  .card-header {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    font-family:'Times New Roman', Times, serif;
+  }
+  
+  .card-header span {
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 135%;
+    color: rgba(61, 55, 41, 0.66);
+  }
+  
+  span.temperatura {
+    position: absolute;
+    left: 25px;
+    bottom: 12px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 77px;
+    color: rgba(87, 77, 51, 1);
+  }
+  
+  .temp-scale {
+    width: 80px;
+    height: 36px;
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.06);
+    border-radius: 9px;
+  }
+  h4{
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  #paisLetra{
+      font-weight: 800;
+      font-size: 25px;
+      line-height: 80%;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: rgb(0, 0, 0);
+      color: rgb(255, 255, 255);
+      font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+  h3{
+    color: white;
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 30px;
+  }
+  .mostrarMensaje{
+    display: none;
+  }
+  img.imagen{
+    height: 10rem;
+    width: 10rem;
+    position: absolute;
+    margin-left: 11rem;
+    margin-top: -2rem;
+  }
+  #ciudadCompleta{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family:'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  #temperatura{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family:'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif; 
+  }
